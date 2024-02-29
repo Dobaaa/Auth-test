@@ -1,0 +1,10 @@
+.head h1 {
+  display: flex;
+  justify-content: center;
+  color: rgb(6, 71, 71);
+}
+.head h2 {
+  display: flex;
+  justify-content: start;
+  padding: 10px 40px;
+}

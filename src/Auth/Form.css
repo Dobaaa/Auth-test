@@ -1,0 +1,117 @@
+/* global values*/
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --main-color: #afeeee;
+}
+
+/* Form style*/
+
+.container {
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+form {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0px 2px 15px rgba(0 0 0/ 10%);
+}
+
+input {
+  padding: 10px 20px;
+  width: 90%;
+  outline: none;
+  margin-bottom: 5px;
+  border: 1px solid white;
+  border-radius: 10px;
+  box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.1);
+  transition: 0.5s;
+}
+input:focus {
+  border: 1px solid var(--main-color);
+}
+.input-field {
+  display: flex;
+  align-items: center;
+}
+.input-field i {
+  color: red;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.input-field i:last-child {
+  color: #067272;
+}
+label {
+  color: #067272;
+  padding: 4px;
+}
+.submit-btn {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+  margin-top: 0;
+  display: block;
+}
+
+button {
+  padding: 10px 20px;
+  cursor: pointer;
+  border-style: none;
+  background-color: var(--main-color);
+  border: 1px solid var(--main-color);
+  color: white;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: transparent;
+  color: #067272;
+  border: 1px solid var(--main-color);
+}
+
+/* start responsive area  */
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+  form {
+    width: 250px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+  form {
+    width: 350px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  form {
+    width: 500px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  form {
+    width: 600px;
+  }
+}
+/* end responsive area  */
